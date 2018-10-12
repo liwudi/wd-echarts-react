@@ -17,9 +17,9 @@ module.exports = {
     mode: 'production',
     // 配置入口文件
     entry: {
-        app: './src/index.js',
-        index: './src/WdEchartsReact.js',
-        main: './src/main.js'
+        app: './src/main.js',
+        index: './src/index.js',
+        main: './src/WdEchartsReact.js'
     },
     // 出口文件目录为根目录下dist, 输出的文件名为main
     output: {
