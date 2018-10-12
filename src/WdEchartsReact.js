@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import Echarts from 'echarts';
 import { clear, bind } from 'size-sensor';
 
-export default class WdEchartsReact extends Component{
+class WdEchartsReact extends Component{
     constructor(props){
         super(props);
         this.dom = null;
@@ -48,3 +48,5 @@ export default class WdEchartsReact extends Component{
         );
     }
 }
+
+module.exports = WdEchartsReact;
