@@ -14,7 +14,7 @@ let htmlWebpackPlugin = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     // 配置入口文件
     entry: {
         app: './src/main.js',
@@ -26,10 +26,10 @@ module.exports = {
         path: path.resolve(__dirname, 'libs'),
         filename: '[name].js',
     },
-    plugins: [
-        htmlWebpackPlugin,
-        new UglifyJSPlugin(),
-    ],
+    // plugins: [
+    //     htmlWebpackPlugin,
+    //     new UglifyJSPlugin(),
+    // ],
     module: {
         rules: [
             { test: /\.js|jsx$/, use: 'babel-loader', exclude: /node_modules/ },
